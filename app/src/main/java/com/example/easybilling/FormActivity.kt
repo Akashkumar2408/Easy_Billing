@@ -2,12 +2,12 @@ package com.example.easybilling
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.easybilling.databinding.ActivityHomeBinding
+import com.example.easybilling.databinding.ActivityFormBinding
 
-class HomeActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityHomeBinding
+class FormActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityFormBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding=ActivityHomeBinding.inflate(layoutInflater)
+        binding=ActivityFormBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
     }

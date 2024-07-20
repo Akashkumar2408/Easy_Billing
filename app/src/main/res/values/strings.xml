@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">EasyBilling</string>
+    <string name="welcome">Welcome</string>
+    <string name="to_your">To Your</string>
+    <string name="shop_s">Shop\'s</string>
+    <string name="billing">Billing</string>
+    <string name="hub">Hub</string>
+    <string name="mobile">Mobile</string>
+    <string name="easy_billing">Easy Billing</string>
+    <string name="accessoris">Accessoris</string>
+    <string name="bill_number">BILL NUMBER</string>
+    <string name="customer_name">CUSTOMER NAME</string>
+    <string name="customer_aadharcard_number">CUSTOMER AADHARCARD NUMBER</string>
+    <string name="customer_phone_number">CUSTOMER PHONE NUMBER</string>
+    <string name="customer_address">CUSTOMER ADDRESS</string>
+    <string name="brand">BRAND</string>
+    <string name="model_number">MODEL NUMBER</string>
+    <string name="imei_number">IMEI NUMBER 1</string>
+    <string name="imei_number_2">IMEI NUMBER 2</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="price">PRICE</string>
+    <string name="due">DUE</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="warranty_date">WARRANTY DATE</string>
+    <string name="date">DATE</string>
+    <string name="payment_method">PAYMENT METHOD</string>
 </resources>
