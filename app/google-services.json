@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522745211874",
+    "project_id": "easy-billing-c7389",
+    "storage_bucket": "easy-billing-c7389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522745211874:android:6a11b9a767988476e2a7bb",
+        "android_client_info": {
+          "package_name": "com.example.easybilling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTnRToFNjE2bul4ajTSroCIgD4XU7FmQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

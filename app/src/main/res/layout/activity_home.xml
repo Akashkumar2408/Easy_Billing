@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:background="@color/black"
+    tools:context=".Activity.HomeActivity">
 
     <ImageView
         android:layout_width="@dimen/_60sdp"
@@ -14,123 +14,120 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/homePageText"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="@dimen/_100sdp"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginEnd="@dimen/_30sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@drawable/rectangle_1">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/homePageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            android:layout_margin="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_flawless"
+                android:textColor="@color/textHighlight"
+                android:textSize="@dimen/_25ssp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invoices"
+                android:textColor="@color/textHighlight"
+                android:textSize="@dimen/_25ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/approve_sign_and_keep"
+                android:textSize="@dimen/_16ssp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tabs_on_every_invoice"
+                android:textSize="@dimen/_16ssp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/that_s_sent_to"
+                android:textSize="@dimen/_16ssp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customers"
+                android:textSize="@dimen/_16ssp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
 
         <TextView
+            android:id="@+id/mobailBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome"
-            android:textColor="@color/homePageFont"
-            android:textSize="@dimen/_40ssp"
-            android:textStyle="bold" />
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_30sdp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/homepage_button_bg"
+            android:drawableStart="@drawable/phone_icon"
+            android:gravity="left|center"
+            android:paddingStart="@dimen/_60sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="@string/mobile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homePageText" />
+
+
         <TextView
+            android:id="@+id/accessoriesBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/to_your"
-            android:textSize="@dimen/_30ssp"
-            android:textColor="@color/white"/>
-        <LinearLayout
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_30sdp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/homepage_button_bg"
+            android:drawableStart="@drawable/headphones"
+            android:gravity="left|center"
+            android:paddingStart="@dimen/_60sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="@string/accessoris"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobailBtn" />
+
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shop_s"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_30ssp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:text="@string/billing"
-                android:textSize="@dimen/_40ssp"
-                android:textColor="@color/homePageFont"
-                android:textStyle="bold"/>
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hub"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_30ssp"/>
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/mobile_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:backgroundTint="@color/black"
-        android:elevation="@dimen/_50sdp"
-        app:cardCornerRadius="@dimen/_50sdp"
-        app:layout_constraintTop_toBottomOf="@+id/homePageText">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@drawable/homepage_button_bg"
-            android:gravity="center"
-            android:text="@string/mobile"
-            android:textStyle="bold"
-            android:textSize="@dimen/_20sdp"
-            android:textColor="@color/white" />
-
-    </androidx.cardview.widget.CardView>
+            android:text="@string/easy_billing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accessoriesBtn" />
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/accessories_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
-        android:layout_marginHorizontal="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:backgroundTint="@color/black"
-        android:elevation="@dimen/_50sdp"
-        app:cardCornerRadius="@dimen/_50sdp"
-        app:layout_constraintTop_toBottomOf="@+id/mobile_view"
-        tools:layout_editor_absoluteX="39dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@drawable/homepage_button_bg"
-            android:gravity="center"
-            android:text="@string/accessoris"
-            android:textStyle="bold"
-            android:textSize="@dimen/_20sdp"
-            android:textColor="@color/white" />
-
-    </androidx.cardview.widget.CardView>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/easy_billing"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:textSize="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

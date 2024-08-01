@@ -3,6 +3,8 @@ import com.android.build.api.dsl.ViewBinding
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -53,5 +55,15 @@ dependencies {
     //view binding
     implementation ("com.intuit.sdp:sdp-android:1.0.6")
     implementation ("com.intuit.ssp:ssp-android:1.0.6")
+
+    // fire base
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
+
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
 
 }

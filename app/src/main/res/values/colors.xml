@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="homePageFont">#1431FA</color>
     <color name="formPageColor">#E2E2E2</color>
+    <color name="inputHintColor">#83000000</color>
+    <color name="homeScreenText">#FFFFFF</color>
+    <color name="textHighlight">#1431FA</color>
 </resources>

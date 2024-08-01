@@ -5,27 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/formPageColor"
-    tools:context=".FormActivity">
+    tools:context=".Activity.FormActivity">
 
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/form_page"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginHorizontal="@dimen/_10sdp">
+            app:layout_constraintTop_toBottomOf="@+id/header">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bill_number"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/bill_number"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -33,35 +61,36 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:autofillHints="@string/bill_number"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/bill_number"
-                android:padding="@dimen/_10sdp"
+                android:textColorHint="@color/inputHintColor"
+                android:padding="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/customer_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
-                android:autofillHints="@string/bill_number" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/customer_name"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_18ssp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
                 android:hint="@string/customer_name"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/customer_aadharcard_number"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/customer_aadharcard_number"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -69,10 +98,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:hint="@string/customer_aadharcard_number"
-                android:padding="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:background="@drawable/form_button_bg"
+                android:hint="@string/customer_aadharcard_number"
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
@@ -87,17 +116,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/customer_phone_number"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/customer_address"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -105,17 +134,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:hint="@string/customer_address"
-                android:padding="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:background="@drawable/form_button_bg"
+                android:hint="@string/customer_address"
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/brand"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/brand"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -123,10 +152,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:hint="@string/brand"
-                android:padding="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:background="@drawable/form_button_bg"
+                android:hint="@string/brand"
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
@@ -141,17 +170,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/model_number"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/imei_number"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -159,17 +188,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/imei_number"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/imei_number_2"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -177,17 +206,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/imei_number_2"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/quantity"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -195,17 +224,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/quantity"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/price"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -213,17 +242,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/price"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/due"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -231,17 +260,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/due"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/discount"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -249,17 +278,18 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:autofillHints="@string/discount"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/discount"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/warranty_date"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -267,17 +297,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/form_button_bg"
                 android:hint="@string/warranty_date"
-                android:padding="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="@string/date"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -285,17 +315,17 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:hint="@string/date"
-                android:padding="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:background="@drawable/form_button_bg"
+                android:hint="@string/date"
+                android:padding="@dimen/_10sdp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/payment_method"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/payment_method"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -303,10 +333,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
-                android:hint="@string/payment_method"
-                android:padding="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/form_button_bg" />
+                android:background="@drawable/form_button_bg"
+                android:hint="@string/payment_method"
+                android:padding="@dimen/_10sdp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -339,8 +369,8 @@
                     <ImageView
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
-                        android:src="@drawable/right"
                         android:layout_marginEnd="@dimen/_60sdp"
+                        android:src="@drawable/right"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -348,12 +378,13 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-
-
-
     </androidx.core.widget.NestedScrollView>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

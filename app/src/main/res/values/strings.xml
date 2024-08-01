@@ -24,4 +24,16 @@
     <string name="warranty_date">WARRANTY DATE</string>
     <string name="date">DATE</string>
     <string name="payment_method">PAYMENT METHOD</string>
+    <string name="form_page">FORM PAGE</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="sign_up_with_google">Sign Up With Google</string>
+    <string name="already_have_an_account">Already Have An Account ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up_with_apple">Sign Up with Apple</string>
+    <string name="share_flawless">Share Flawless</string>
+    <string name="invoices">Invoices</string>
+    <string name="approve_sign_and_keep">Approve Sign And Keep</string>
+    <string name="tabs_on_every_invoice">Tabs On Every Invoice</string>
+    <string name="that_s_sent_to">That’s Sent To</string>
+    <string name="customers">Customers</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.easybilling
+package com.example.easybilling.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
