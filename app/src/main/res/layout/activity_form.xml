@@ -64,7 +64,6 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:autofillHints="@string/bill_number"
                 android:background="@drawable/form_button_bg"
-                android:hint="@string/bill_number"
                 android:textColorHint="@color/inputHintColor"
                 android:padding="@dimen/_10sdp"/>
 
@@ -83,6 +82,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/customer_name"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/customer_name"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -101,6 +102,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/customer_aadharcard_number"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/customer_aadharcard_number"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -119,6 +122,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/customer_phone_number"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/customer_phone_number"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -137,6 +142,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/customer_address"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/customer_address"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -155,6 +162,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/brand"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/brand"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -173,6 +182,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/model_number"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/model_number"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -191,6 +202,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/imei_number"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/imei_number"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -209,6 +222,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/imei_number_2"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/imei_number_2"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -227,6 +242,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/quantity"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/quantity"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -245,6 +262,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/price"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/price"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -263,6 +282,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/due"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/due"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -282,6 +303,7 @@
                 android:autofillHints="@string/discount"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/discount"
+                android:textColorHint="@color/inputHintColor"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -300,6 +322,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/warranty_date"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/warranty_date"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -318,6 +342,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/date"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/date"
                 android:padding="@dimen/_10sdp" />
 
 
@@ -336,6 +362,8 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/form_button_bg"
                 android:hint="@string/payment_method"
+                android:textColorHint="@color/inputHintColor"
+                android:autofillHints="@string/payment_method"
                 android:padding="@dimen/_10sdp" />
 
             <androidx.cardview.widget.CardView
@@ -355,11 +383,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="@drawable/homepage_button_bg"
+                        android:background="@drawable/formpage_button_bg"
                         android:gravity="left"
                         android:paddingStart="@dimen/_60sdp"
                         android:paddingTop="@dimen/_12sdp"
-                        android:text="@string/mobile"
+                        android:text="Next"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_25ssp"
                         android:textStyle="bold"
@@ -369,7 +397,7 @@
                     <ImageView
                         android:layout_width="@dimen/_50sdp"
                         android:layout_height="@dimen/_50sdp"
-                        android:layout_marginEnd="@dimen/_60sdp"
+                        android:layout_marginEnd="@dimen/_40sdp"
                         android:src="@drawable/right"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"

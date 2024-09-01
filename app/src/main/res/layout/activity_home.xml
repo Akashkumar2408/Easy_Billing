@@ -8,6 +8,7 @@
     tools:context=".Activity.HomeActivity">
 
     <ImageView
+        android:id="@+id/menu_btn"
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_60sdp"
         android:src="@drawable/menu_icon"
@@ -50,23 +51,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/approve_sign_and_keep"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_16ssp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/tabs_on_every_invoice"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_16ssp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/that_s_sent_to"
                 android:textSize="@dimen/_16ssp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/customers"
                 android:textSize="@dimen/_16ssp"/>
 

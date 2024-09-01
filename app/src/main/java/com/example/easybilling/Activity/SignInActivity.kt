@@ -1,5 +1,6 @@
 package com.example.easybilling.Activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.easybilling.databinding.ActivitySigninBinding
@@ -11,7 +12,9 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
+        binding.signUpWithGoogle.setOnClickListener {
+            startActivity(Intent(this,HomeActivity::class.java))
+        }
 
     }
 }
