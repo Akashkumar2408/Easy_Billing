@@ -13,7 +13,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.signUpWithGoogle.setOnClickListener {
-            startActivity(Intent(this,HomeActivity::class.java))
+            startActivity(Intent(this,NavigationDrawerActivity::class.java))
         }
 
     }

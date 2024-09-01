@@ -36,4 +36,8 @@
     <string name="tabs_on_every_invoice">Tabs On Every Invoice</string>
     <string name="that_s_sent_to">That’s Sent To</string>
     <string name="customers">Customers</string>
+    <string name="my_account">My Account</string>
+    <string name="log_out">Log Out</string>
+    <string name="sales_data">Sales Data</string>
+    <string name="customer_details">Customer Details</string>
 </resources>
